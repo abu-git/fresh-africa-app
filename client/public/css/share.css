@@ -1,0 +1,340 @@
+share-button,
+share-button .sb-social ul li {
+    cursor: pointer;
+    -webkit-transition: all .3s ease
+}
+
+share-button {
+    position: relative;
+    font-size: 16px;
+    color: #333;
+    background: #a29baa;
+    padding: 5px 10px 5px 1.75em;
+    border-radius: 5px
+}
+
+share-button:before {
+    position: absolute;
+    line-height: 1em;
+    left: .6em;
+    width: 1em;
+    height: 1em;
+    content: ' ';
+    background: url() no-repeat
+}
+
+share-button .sb-social.sb-center,
+share-button .sb-social.sb-left {
+    left: 50%
+}
+
+share-button .sb-social {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+share-button .sb-social.sb-center.sb-top {
+    top: 0;
+    -webkit-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%)
+}
+
+share-button .sb-social.sb-center.sb-bottom {
+    bottom: 0;
+    -webkit-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%)
+}
+
+share-button .sb-social.sb-center.active.sb-top {
+    top: -1em
+}
+
+share-button .sb-social.sb-center.active.sb-bottom {
+    bottom: -1em
+}
+
+share-button .sb-social.sb-left.sb-top {
+    top: 0;
+    -webkit-transform: translate(calc(-100% + 30px), -100%);
+    -ms-transform: translate(calc(-100% + 30px), -100%);
+    transform: translate(calc(-100% + 30px), -100%)
+}
+
+share-button .sb-social.sb-left.sb-middle {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%)
+}
+
+share-button .sb-social.sb-left.sb-bottom {
+    bottom: 0;
+    -webkit-transform: translate(calc(-100% + 30px), 100%);
+    -ms-transform: translate(calc(-100% + 30px), 100%);
+    transform: translate(calc(-100% + 30px), 100%)
+}
+
+share-button .sb-social.sb-left.active.sb-top {
+    top: -1em
+}
+
+share-button .sb-social.sb-left.active.sb-middle {
+    left: -1em
+}
+
+share-button .sb-social.sb-left.active.sb-bottom {
+    bottom: -1em
+}
+
+share-button .sb-social.sb-right {
+    left: 50%
+}
+
+share-button .sb-social.sb-right.sb-top {
+    top: 0;
+    -webkit-transform: translate(-30px, -100%);
+    -ms-transform: translate(-30px, -100%);
+    transform: translate(-30px, -100%)
+}
+
+share-button .sb-social.sb-right.sb-middle {
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+share-button .sb-social.sb-right.sb-bottom {
+    bottom: 0;
+    -webkit-transform: translate(-30px, 100%);
+    -ms-transform: translate(-30px, 100%);
+    transform: translate(-30px, 100%)
+}
+
+share-button .sb-social.sb-right.active.sb-top {
+    top: -1em
+}
+
+share-button .sb-social.sb-right.active.sb-middle {
+    left: calc(100% + 1em)
+}
+
+share-button .sb-social.sb-right.active.sb-bottom {
+    bottom: -1em
+}
+
+share-button .sb-social.active {
+    opacity: 1;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    visibility: visible
+}
+
+share-button .sb-social.load {
+    -webkit-transition: none !important;
+    transition: none !important
+}
+
+@media screen and (max-width:400px) {
+    share-button .sb-social.networks-6.sb-center {
+        white-space: initial;
+        text-align: center;
+        width: 300px
+    }
+}
+
+@media screen and (max-width:460px) {
+    share-button .sb-social.networks-7.sb-center {
+        white-space: initial;
+        text-align: center;
+        width: 360px
+    }
+}
+
+@media screen and (max-width:400px) {
+    share-button .sb-social.networks-7.sb-center {
+        white-space: initial;
+        text-align: center;
+        width: 300px
+    }
+}
+
+@media screen and (max-width:520px) {
+    share-button .sb-social.networks-8.sb-center {
+        white-space: initial;
+        text-align: center;
+        width: 420px
+    }
+}
+
+@media screen and (max-width:460px) {
+    share-button .sb-social.networks-8.sb-center {
+        white-space: initial;
+        text-align: center;
+        width: 360px
+    }
+}
+
+@media screen and (max-width:400px) {
+    share-button .sb-social.networks-8.sb-center {
+        white-space: initial;
+        text-align: center;
+        width: 300px
+    }
+}
+
+share-button .sb-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 0
+}
+
+share-button .sb-social ul li {
+    position: relative;
+    height: 27px;
+    width: 60px;
+    padding: 12px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 54px;
+    z-index: 2;
+    box-sizing: content-box;
+    transition: all .3s ease
+}
+
+share-button .sb-social ul li.disabled {
+    display: none
+}
+
+share-button .sb-social ul li:hover:before {
+    opacity: 0
+}
+
+share-button .sb-social ul li:hover:after {
+    opacity: .5
+}
+
+share-button .sb-social ul li:before {
+    opacity: 1
+}
+
+share-button .sb-social ul li:after {
+    opacity: 0
+}
+
+share-button .sb-social ul li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3
+}
+
+share-button .sb-social li:before {
+    font-family: FontAwesome;
+    padding-right: 0;
+    font-size: 26px;
+    color: #fff;
+    left: 0;
+    position: relative;
+    margin-top: 0;
+    webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
+}
+
+share-button .sb-social li[class*=email]:before {
+    content: "\f0e0 "
+}
+
+share-button .sb-social li[class*=facebook]:before {
+    content: "\f09a"
+}
+
+share-button .sb-social li[class*=googlePlus]:before {
+    content: "\f1a0"
+}
+
+share-button .sb-social li[class*=linkedin]:before {
+    content: "\f0e1"
+}
+
+share-button .sb-social li[class*=pinterest]:before {
+    content: "\f0d2"
+}
+
+share-button .sb-social li[class*=reddit]:before {
+    content: "\f1a1"
+}
+
+share-button .sb-social li[class*=twitter]:before {
+    content: "\f099"
+}
+
+share-button .sb-social li[class*=whatsapp]:before {
+    content: "\f232"
+}
+
+.share-button {
+    background: 0 0 !important;
+    bottom: 90px;
+    float: left;
+    margin-right: 20px;
+    left: 3.5%;
+    z-index: 10;
+    position: fixed;
+    -webkit-transition: all .2s ease-in-out .4s;
+    -moz-transition: all .2s ease-in-out .4s;
+    -o-transition: all .2s ease-in-out .4s;
+    transition: all .2s ease-in-out .4s
+}
+
+.share-button.hidden {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -o-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    -webkit-transition: all .2s ease-in-out .4s;
+    -moz-transition: all .2s ease-in-out .4s;
+    -o-transition: all .2s ease-in-out .4s;
+    transition: all .2s ease-in-out .4s
+}
+
+share-button .sb-social ul li:hover::before {
+    opacity: .6 !important
+}
+
+.share-button::before {
+    background-image: url(../img/share.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 27px 30px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 27px
+}
+
+share-button .sb-social ul li.enabled {
+    display: block !important
+}
+
+share-button .sb-social li[class*=facebook],
+share-button .sb-social li[class*=googlePlus],
+share-button .sb-social li[class*=twitter] {
+    background: 0 0 !important
+}
