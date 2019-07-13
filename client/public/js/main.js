@@ -7,22 +7,23 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
-        $('.d-nav').addClass('d-nav-none');
+        $('.d-nav').addClass('d-nav-none'),
+            $('.share-button,.audio-button').addClass('button-none'),
+            $('.fm__line.top--line').addClass('top--line-none');
     } else {
-        $('.d-nav').removeClass('d-nav-none');
-    }
-});
-
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-        $('.share-button,.audio-button').addClass('button-none');
-    } else {
-        $('.share-button,.audio-button').removeClass('button-none');
+        $('.d-nav').removeClass('d-nav-none'),
+            $('.share-button,.audio-button').removeClass('button-none'),
+            $('.fm__line.top--line').removeClass('top--line-none');
     }
 });
 
 $('.toggle-menu').click(function () {
     $(this).toggleClass('active');
+    $('#menu').toggleClass('open');
+});
+
+$('ul.primary-nav li a').click(function () {
+    $('.toggle-menu').removeClass('active');
     $('#menu').toggleClass('open');
 });
 
@@ -32,11 +33,11 @@ $(".icon-wrap").on('click', function () {
     $(this).toggleClass("disabled");
 });
 
-$(document).ready(function() {
-    str1="mailto:";
-    str2="freshafricaradio";
-    str3="@gmail.com";
-    $("#email_a").attr("href", str1+str2+str3);
+$(document).ready(function () {
+    str1 = "mailto:";
+    str2 = "freshafricaradio";
+    str3 = "@gmail.com";
+    $("#email_a").attr("href", str1 + str2 + str3);
 
 });
 /*--------------------------------------------------

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+<html lang="en" class="no-js">
+	<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#f15f48">
@@ -26,22 +25,7 @@
     <meta http-equiv="cleartype" content="on">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Fresh Africa Radio | Online radio --- testing phase 1 </title>
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <title>Fresh African Radio | Online radio </title>
     <script>
         document.documentElement.className = "js";
         var supportsCssVars = function() {
@@ -54,21 +38,9 @@
     <link rel="stylesheet" href="css/typekit.css">
     <link rel="stylesheet" href="css/share.css">
     <link href="css/style.css" rel="stylesheet">
-    <title>Fresh Africa Radio -- testing phase 1</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <!--div id="root"></div -->
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+<body>
     <div class="fm__line fm__horizontal top--line"></div>
     <div class="fm__line fm__vertical left--line"></div>
     <div class="fm__line fm__vertical right--line"></div>
@@ -113,7 +85,7 @@
         </nav>
         <header id="header">
             <div class="logo">
-                <a href="#"><img src="img/logo.svg" class="img-fluid"></a>
+                <a href="index.html"><img src="img/logo.svg" class="img-fluid"></a>
             </div>
             <nav class="nav">
                 <button class="toggle-menu">
@@ -123,8 +95,8 @@
         </header>
         <div id="menu" class="">
             <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
+                <ul class="primary-nav">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -158,6 +130,9 @@
                 <span class="content__title-sub">24-Hours Online Radio</span>
                 <span class="content__title-inner">Fresh Africa</span>
             </h2>
+            <div class="container">
+                <!--- Radio.co player --->
+            </div>
         </div>
         <div class="content" id="about">
             <div class="container">
@@ -229,10 +204,10 @@
                 <h3 class="content__text xlarge__text">Download</h3>
                 <p class="content__text xsmall__text">Available on iOS and Andriod. Coming soon.</p>
                 <div class="downloads">
-                    <a class="download-link ios" target="_blank" href="#">
+                    <a class="download-link ios" target="_blank" href="">
                         <i class="fa fa-apple" aria-hidden="true"></i>
                     </a>
-                    <a class="download-link android" target="_blank" href="#">
+                    <a class="download-link android" target="_blank" href="">
                         <i class="fa fa-android" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -255,5 +230,4 @@
     <script type="text/javascript" src="js/nav-menu.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-  </body>
-</html>
+</body></html>

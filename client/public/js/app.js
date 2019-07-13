@@ -208,7 +208,7 @@
                     return t.scale.set(.01, .01, .01), t.position.set(0, -14, 0), t.receiveShadow = !0, t.castShadow = !0, t
                 }), this.draw(), setTimeout(function () {
                     e.removeLoader(), e.showBuildings()
-                }, 3500), window.addEventListener("resize", this.onResize.bind(this))
+                }, 3000), window.addEventListener("resize", this.onResize.bind(this))
             }
         }, {
             key: "removeLoader",

@@ -594,6 +594,10 @@ body {
     top: 0;
 }
 
+.fm__line.top--line-none{
+    opacity: 0;
+}
+
 .fm__line.top--line:before {
     bottom: 0;
     transition: transform .45s cubic-bezier(.4, 0, 0, 1);
