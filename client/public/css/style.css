@@ -1418,9 +1418,10 @@ footer .footer__content {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .fm__line.top--line{
+    .fm__line.top--line {
         top: -3rem;
     }
+
     .fm__line.right--line {
         right: 6rem;
     }
@@ -1428,7 +1429,8 @@ footer .footer__content {
     .fm__line.left--line {
         left: 6rem;
     }
-    .toggle-menu{
+
+    .toggle-menu {
         top: 2.5%;
         right: 3.5%;
     }
@@ -1547,5 +1549,9 @@ footer .footer__content {
 
     .share-button .sb-social ul li.facebook {
         left: 30px;
+    }
+
+    .margin-top50 {
+        margin-top: 20px;
     }
 }
