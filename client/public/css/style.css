@@ -291,7 +291,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin: -35px 0 0 -25px;
-    background: url(../img/logo.svg) no-repeat;
+    background: url(../img/loader.svg) no-repeat;
     background-size: 81px;
     z-index: 10;
 }
@@ -594,7 +594,7 @@ body {
     top: 0;
 }
 
-.fm__line.top--line-none{
+.fm__line.top--line-none {
     opacity: 0;
 }
 
@@ -1209,6 +1209,10 @@ a:focus {
     text-align: center;
 }
 
+.margin-top50 {
+    margin-top: 50px;
+}
+
 .col-6,
 .col-12 {
     position: relative;
@@ -1225,10 +1229,10 @@ a:focus {
 }
 
 .col-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
 
 #team .row {
     counter-reset: my-counter;
@@ -1390,7 +1394,7 @@ footer .footer__content {
         line-height: 100px;
     }
 
-    
+
 }
 
 @media (min-width: 992px) {
@@ -1414,12 +1418,19 @@ footer .footer__content {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .fm__line.top--line{
+        top: -3rem;
+    }
     .fm__line.right--line {
         right: 6rem;
     }
 
     .fm__line.left--line {
         left: 6rem;
+    }
+    .toggle-menu{
+        top: 2.5%;
+        right: 3.5%;
     }
 
     .content {
@@ -1480,7 +1491,7 @@ footer .footer__content {
     }
 
     #main__visual .content__title {
-        margin-top: -200px;
+        margin-top: -100px;
     }
 
     .content__title-sub:before {
@@ -1502,14 +1513,39 @@ footer .footer__content {
     #contact .content__title:before {
         left: 90px;
     }
-    .large__text{
+
+    .large__text {
         font-size: 1.6rem;
     }
-    .small__text{
+
+    .small__text {
         font-size: 1.2rem;
     }
-    .box-number:after{
+
+    .box-number:after {
         width: 20px;
         left: -5px;
+    }
+
+    .share-button .sb-social {
+        top: 0 !important;
+        left: 50%;
+        transform: translate(100%, 0) !important;
+    }
+
+    .share-button .sb-social ul li.enabled {
+        display: inline-block !important;
+    }
+
+    .share-button .sb-social ul li {
+        position: absolute;
+    }
+
+    .share-button .sb-social ul li.twitter {
+        left: 90px;
+    }
+
+    .share-button .sb-social ul li.facebook {
+        left: 30px;
     }
 }
