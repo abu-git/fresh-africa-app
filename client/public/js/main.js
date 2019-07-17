@@ -40,6 +40,23 @@ $(document).ready(function () {
     $("#email_a").attr("href", str1 + str2 + str3);
 
 });
+$('.slick-slider').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '0',
+    responsive: [{
+        breakpoint: 991,
+        settings: {
+            arrows: false,
+            slidesToShow: 1
+        }
+    }]
+});
 /*--------------------------------------------------
 Function Page Share
 ---------------------------------------------------*/
