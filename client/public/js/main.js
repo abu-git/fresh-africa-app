@@ -40,22 +40,20 @@ $(document).ready(function () {
     $("#email_a").attr("href", str1 + str2 + str3);
 
 });
-$('.slick-slider').slick({
-    infinite: true,
+var swiper = new Swiper('.team-slider', {
     autoplay: true,
-    autoplaySpeed: 7000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    centerMode: true,
-    centerPadding: '0',
-    responsive: [{
-        breakpoint: 991,
-        settings: {
-            arrows: false,
-            slidesToShow: 1
-        }
-    }]
+    speed: 3500,
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+        invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+        el: '.team-slider__pagination',
+        clickable: true,
+    }
 });
 /*--------------------------------------------------
 Function Page Share
