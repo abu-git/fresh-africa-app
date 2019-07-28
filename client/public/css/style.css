@@ -1240,7 +1240,7 @@ a:focus {
 }
 
 .team-slider {
-    width: 95%;
+    width: 65%;
     position: relative;
     max-width: 800px;
     margin: auto;
@@ -1335,7 +1335,7 @@ a:focus {
 }
 
 .team-slider__title {
-    font-size: 21px;
+    font-size: 26px;
     font-weight: 700;
     color: #333;
     margin-bottom: 20px;
@@ -1505,11 +1505,24 @@ footer .footer__content {
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .toggle-menu {
         top: 3%;
-        right: 5%;
+        right: 4%;
     }
 
     .fm__line.top--line {
         top: -1rem;
+    }
+
+    .team-slider {
+        width: 75%;
+    }
+    .fm__line.left--line{
+        left: 7rem;
+    }
+    .fm__line.right--line{
+        right: 7rem;
+    }
+    .downloads{
+        margin-top: 50px;
     }
 }
 
@@ -1544,17 +1557,15 @@ footer .footer__content {
         font-size: 2.5vw;
     }
 
-    .team-slider {
-        max-width: 480px;
-        height: 300px;
-    }
 }
 
 @media screen and (max-width: 768px) {
     .team-slider {
+        max-width: 500px;
+        width: 85%;
         min-height: 500px;
         height: auto;
-        margin: 180px auto;
+        margin: 100px auto;
     }
 
     .team-slider__item {
@@ -1684,6 +1695,10 @@ footer .footer__content {
 
     .team-slider__content {
         padding: 0;
+    }
+
+    .team-slider__title {
+        font-size: 21px;
     }
 
     .team-slider__pagination {
