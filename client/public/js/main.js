@@ -35,7 +35,7 @@ $(".icon-wrap").on('click', function () {
 
 $(document).ready(function () {
     str1 = "mailto:";
-    str2 = "freshafricaradio";
+    str2 = "abu.sammie";
     str3 = "@gmail.com";
     $("#email_a").attr("href", str1 + str2 + str3);
 
@@ -59,7 +59,7 @@ var swiper = new Swiper('.team-slider', {
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker
-            .register('../sw.js')
+            .register('/sw.js')
             .then(reg => console.log('Service Worker: Registered (Pages)'))
             .catch(err => console.log(`Service Worker: Error: ${err}`));
     });
